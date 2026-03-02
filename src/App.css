@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* Transition animations for password table rows */
+.row-enter {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.row-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.row-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.row-exit-active {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
